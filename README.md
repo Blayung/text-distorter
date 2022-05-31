@@ -1,2 +1,2 @@
-# text-distorter
+# Text distorter
 Python script to distort text.
