@@ -25,10 +25,11 @@ for _ in text2:
 
 idx=0
 for _ in text2:
-    if randint(0,1)==1:
-        text2[idx]=text2[idx].lower()
-    else:
-        text2[idx]=text2[idx].upper()
+    if randint(0,100)<distortion:
+        if text2[idx].isupper():
+            text2[idx]=text2[idx].lower()
+        elif text2[idx].islower():
+            text2[idx]=text2[idx].upper()
     idx+=1
 
 text3=""
