@@ -1,14 +1,14 @@
 #!/bin/python3
 from random import randint, choice
 
-text=input("Type in text > ")
+text=input("Type in some text > ")
 try:
-    distortion=int(input("Type in level of distortion (0-100) > "))
+    distortion=int(input("Type in the level of distortion (0-100) > "))
     if distortion<0 or distortion>100:
-        print("Level of distortion must be between 0 and 100!")
+        print("The level of distortion must be between 0 and 100!")
         exit()
 except:
-    print("Level of distortion has to be number!")
+    print("The level of distortion has to be number!")
     exit()
 text2=list(text)
 
